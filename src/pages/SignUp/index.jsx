@@ -1,9 +1,12 @@
 import "./styles.js";
+import { Container } from "./styles.js";
 
 function SignUp() {
   return (
     <>
-      <h1>Hello word - SignUp</h1>
+      <Container>
+        <h1>Hello word - SignUp</h1>
+      </Container>
     </>
   );
 }
