@@ -5,7 +5,7 @@ import { Container, Banner, Form, Wrapper } from "./styles.js";
 import { Label } from "../../components/Label/index.jsx";
 import { Button } from "../../components/Button/index.jsx";
 
-function SignUp() {
+function SignIn() {
   return (
     <>
       <Container>
@@ -15,28 +15,24 @@ function SignUp() {
         </Banner>
 
         <Form>
-          <h2>Crie sua conta</h2>
+          <h2>Faça login</h2>
+
           <Wrapper>
-            <Label title="Seu nome" />
-            <Input type="text" placeholder="Exemplo: Maria da Silva" />
+            <Label title="E-mail" />
+            <Input type="email" placeholder="Exemplo: exemplo@exemplo.com.br" />
           </Wrapper>
 
           <Wrapper>
-            <Label type="email" title="E-mail" />
-            <Input placeholder="Exemplo: exemplo@exemplo.com.br" />
+            <Label title="Senha" />
+            <Input type="password" placeholder="No mínimo 6 caracteres" />
           </Wrapper>
 
-          <Wrapper>
-            <Label type="password" title="Senha" />
-            <Input placeholder="No mínimo 6 caracteres" />
-          </Wrapper>
-
-          <Button title="Criar conta" />
-          <a href="/">Já tenho uma conta</a>
+          <Button title="Entrar" />
+          <a href="/">Criar uma conta</a>
         </Form>
       </Container>
     </>
   );
 }
 
-export default SignUp;
+export default SignIn;
