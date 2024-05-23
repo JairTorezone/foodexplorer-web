@@ -32,9 +32,8 @@ function SignUp() {
           </Wrapper>
 
           <Button title="Criar conta" />
+          <a href="/">Já tenho uma conta</a>
         </Form>
-
-        <a href="/">Já tenho uma conta2</a>
       </Container>
     </>
   );
