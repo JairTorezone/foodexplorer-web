@@ -4,6 +4,7 @@ import { Input } from "../../components/Input/index.jsx";
 import { Container, Banner, Form, Wrapper } from "./styles.js";
 import { Label } from "../../components/Label/index.jsx";
 import { Button } from "../../components/Button/index.jsx";
+import { Header } from "../../components/Header/index.jsx";
 
 function SignIn() {
   return (

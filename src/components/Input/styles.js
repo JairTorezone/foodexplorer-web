@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { DEVICE_BREAKPOINTS } from "../../styles/deviceBreakpoints";
 
 export const Container = styled.div`
   width: 100%;
@@ -29,6 +30,10 @@ export const Container = styled.div`
 
     > svg {
       color: ${({ theme }) => theme.COLORS.GRAY_500};
+    }
+
+    @media (min-width: ${DEVICE_BREAKPOINTS.MD}) {
+      padding: 1.6rem;
     }
   }
 `;
