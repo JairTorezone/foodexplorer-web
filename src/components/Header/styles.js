@@ -6,6 +6,7 @@ export const Container = styled.div`
   max-width: 132rem;
   height: auto;
 
+  background-color: ${({ theme }) => theme.COLORS.BACKGROUND_600};
   margin: auto;
 
   display: flex;
