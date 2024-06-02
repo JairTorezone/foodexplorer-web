@@ -6,7 +6,8 @@ export const Container = styled.button`
   border-radius: 0.5rem;
   cursor: pointer;
 
-  background-color: ${({ theme }) => theme.COLORS.TOMATO_100};
+  background-color: ${({ theme, $isedit }) =>
+    $isedit ? theme.COLORS.BACKGROUND_800 : theme.COLORS.TOMATO_400};
 
   font-size: 1.6rem;
   font-style: normal;
